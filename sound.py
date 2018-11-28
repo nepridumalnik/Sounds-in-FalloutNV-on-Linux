@@ -8,7 +8,6 @@ for root, dirs, files in os.walk("/home/muser/.local/share/Steam/steamapps/commo
              print(text[:-4]+'.wav')
              sound = AudioSegment.from_mp3(text)
              sound.export(text[:-4]+'.wav', format="wav")
-             os.remove(text)
              
 for root, dirs, files in os.walk("/home/muser/.local/share/Steam/steamapps/common/Fallout New Vegas enplczru/"):
     for file in files:
